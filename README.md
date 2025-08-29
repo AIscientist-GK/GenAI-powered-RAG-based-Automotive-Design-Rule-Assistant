@@ -60,6 +60,16 @@ This will:
 - Generate embeddings (using `BAAI/bge-large-en-v1.5`).
 - Store a FAISS index locally.
 
+### 🔐 AWS Credentials Setup
+This app uses **Amazon Bedrock** for LLM inference.  
+To use it, you need:
+1. An AWS account with **Bedrock enabled** in your region.
+2. Install AWS CLI:
+   ```bash
+   pip install awscli
+   aws configure
+
+
 ### 4. Run the Application
 ```bash
 streamlit run ui_upgrad.py
