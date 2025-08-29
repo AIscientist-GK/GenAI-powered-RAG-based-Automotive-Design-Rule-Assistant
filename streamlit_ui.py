@@ -10,8 +10,8 @@ from utils import build_context_from_docs
 
 # === Init ===
 load_dotenv(override=True)
-st.set_page_config(page_title="🧠 Plastic Trim Design Technical Assistant", layout="wide")
-st.title("🧠 Plastic Trim Design Technical Assistant")
+st.set_page_config(page_title="GenAI-powered-RAG-based-Automotive-Design-Rule-Assistant", layout="wide")
+st.title("GenAI-powered-RAG-based-Automotive-Design-Rule-Assistant")
 
 # === Session state init ===
 if "chat_history" not in st.session_state:
@@ -64,3 +64,4 @@ if query:
         for i, doc in enumerate(docs):
             page = doc.metadata.get("page", "?")
             st.markdown(f"**Doc {i+1}**, Page {page}")
+
